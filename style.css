@@ -20,7 +20,7 @@ body {
 /* Container Styling */
 .container {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     width: 90%;
     max-width: 800px;
     background: #000000;
@@ -67,7 +67,7 @@ body {
 .meme-img {
     width: 100%;
     height: auto;
-    max-height: 800px;
+    max-height: 600px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #000000;
@@ -97,7 +97,6 @@ body {
 .next-btn:active {
     transform: translateY(0);
 }
-
 
 /* Button Styling */
 .btn {
@@ -218,16 +217,16 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 15px;
         max-width: 100%;
     }
     .title {
         margin-bottom: 15px;
     }
     .meme-img {
-        max-height: 350px;
+        max-height: 400px;
     }
     .next-btn {
         padding: 10px 20px;
@@ -235,5 +234,24 @@ body {
     }
     .btn {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .title {
+        font-size: 1.8rem;
+    }
+    .meme-img {
+        max-height: 300px;
+    }
+    .next-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .btn {
+        margin-top: 15px;
     }
 }
