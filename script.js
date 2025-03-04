@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("randomMemeGenerator called");
         try {
             /* Fetch a random meme from the API */
-            const res = await fetch("https://meme-api.com/gimme");
+            const res = await fetch("https://imgflip.com/api");
             if (!res.ok) throw new Error(`Network response was not ok: ${res.status}`);
             const json = await res.json();
             const url = json.url;
